@@ -12,6 +12,7 @@ depends=('libnih')
 makedepends=('help2man')
 source=("https://linuxcontainers.org/downloads/cgmanager/cgmanager-$pkgver.tar.gz")
 sha256sums=('29b155befb3ac233d5d29dbca7c791c8138bab01bfa78ea4757ebb88ce23b458')
+validpgpkeys=('6DD4217456569BA711566AC7F06E8FDE7B45DAAC') # Eric Vidal
 
 build() {
 	cd "$srcdir/$pkgname-$pkgver"
