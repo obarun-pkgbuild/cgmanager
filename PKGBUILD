@@ -3,7 +3,7 @@
 # 						Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 pkgname=cgmanager
 pkgver=0.41
-pkgrel=2
+pkgrel=3
 pkgdesc="Another daemon for managing control groups"
 arch=(x86_64)
 url="https://linuxcontainers.org/"
@@ -19,7 +19,8 @@ build() {
 #	./bootstrap.sh
 	./configure --prefix=/usr \
 	--sbindir=/usr/bin \
-	--libdir=/usr/lib
+	--libdir=/usr/lib \
+	--libexecdir=/usr/lib
 	make
 }
 
